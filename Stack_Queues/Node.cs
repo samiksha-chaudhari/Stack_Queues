@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Stack_Queues
 {
-    class Node
+    class Node<Gtype> //Generic type
     {
-        public int data;
-        public Node next;
-        public Node(int data)
+        public Gtype data;
+        public Node<Gtype> next;
+        public Node(Gtype data) //constuctor
         {
             this.data = data;
         }

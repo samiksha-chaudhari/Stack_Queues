@@ -7,7 +7,7 @@ namespace Stack_Queues
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to stack and Queues");
-            Stack Stack = new Stack();
+            Stack<int> Stack = new Stack<int>();
             Stack.Push(70);
             Stack.Push(30);
             Stack.Push(56);

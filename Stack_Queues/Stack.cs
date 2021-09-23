@@ -4,16 +4,16 @@ using System.Text;
 
 namespace Stack_Queues
 {
-    class Stack
+    class Stack<Gtype>
     {
-        private Node top;
+        private Node<Gtype> top;
         public Stack()
         {
             this.top = null;
         }
-        public void Push(int no)
+        public void Push(Gtype no)
         {
-            Node node = new Node(no);
+            Node<Gtype> node = new Node<Gtype>(no);
             if (this.top == null)
                 node.next = null;
             else
@@ -23,7 +23,7 @@ namespace Stack_Queues
         }
         public void Display()
         {
-            Node temp = this.top;
+            Node<Gtype> temp = this.top;
             while (temp != null)
             {
                 Console.Write(temp.data + " ");
