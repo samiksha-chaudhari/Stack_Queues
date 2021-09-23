@@ -7,7 +7,7 @@ namespace Stack_Queues
     class Queue<Gtype>
     {
         Node<Gtype> head = null;
-        internal void Enqueue(Gtype data)
+        public void Enqueue(Gtype data)
         {
             Node<Gtype> node = new Node<Gtype>(data);
             if (head == null)
@@ -24,7 +24,7 @@ namespace Stack_Queues
             Console.WriteLine("{0} added", node.data);
         }
 
-        internal void Display()
+        public void Display()
         {
             Node<Gtype> temp = this.head;
             if (temp == null)
