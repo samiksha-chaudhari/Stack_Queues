@@ -12,6 +12,9 @@ namespace Stack_Queues
             Stack.Push(30);
             Stack.Push(56);
             Stack.Display();
+            Stack.Peek();
+            Stack.Pop();
+            Stack.Empty();
         }
     }
 }
