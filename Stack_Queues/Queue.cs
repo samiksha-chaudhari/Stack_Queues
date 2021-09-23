@@ -7,6 +7,10 @@ namespace Stack_Queues
     class Queue<Gtype>
     {
         Node<Gtype> head = null;
+        /// <summary>
+        /// method to add data in queue
+        /// </summary>
+        /// <param name="data"></param>
         public void Enqueue(Gtype data)
         {
             Node<Gtype> node = new Node<Gtype>(data);
@@ -24,6 +28,9 @@ namespace Stack_Queues
             Console.WriteLine("{0} added", node.data);
         }
 
+        /// <summary>
+        ///method to display data in queue 
+        /// </summary>
         public void Display()
         {
             Node<Gtype> temp = this.head;
@@ -38,6 +45,11 @@ namespace Stack_Queues
                 temp = temp.next;
             }
         }
+
+        /// <summary>
+        /// method to remove first data from queue
+        /// </summary>
+        /// <returns></returns>
         public Node<Gtype> Dequeue()
         {
             if (this.head == null)
