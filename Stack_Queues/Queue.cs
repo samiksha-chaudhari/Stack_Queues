@@ -38,5 +38,12 @@ namespace Stack_Queues
                 temp = temp.next;
             }
         }
+        public Node<Gtype> Dequeue()
+        {
+            if (this.head == null)
+                return null;
+            this.head = this.head.next;
+            return this.head;
+        }
     }
 }

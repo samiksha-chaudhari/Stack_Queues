@@ -17,10 +17,14 @@ namespace Stack_Queues
              Stack.Empty();*/
 
             Queue<int> Queue = new Queue<int>();
-             Queue.Enqueue(70);
-             Queue.Enqueue(30);
-             Queue.Enqueue(56);
-             Queue.Display();
+            Queue.Enqueue(70);
+            Queue.Enqueue(30);
+            Queue.Enqueue(56);
+            Console.WriteLine("before dequeue : ");
+            Queue.Display();
+            Queue.Dequeue();
+            Console.WriteLine("\nafter dequeue : ");
+            Queue.Display();
         }
     }
 }
